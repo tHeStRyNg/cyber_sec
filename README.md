@@ -1,4 +1,4 @@
-## Metasploit
+### Metasploit
 ``` msfconsole ```
 ``` use <module> ```
 ``` check <ip> after module in use checks if exp ```
@@ -11,7 +11,8 @@
 ``` set SRVPORT 4899 ```
 ``` run  ```
 
-## Encoders - https://www.scriptjunkie.us/2011/04/why-encoding-does-not-matter-and-how-metasploit-generates-exes/
+### Encoders - 
+Resource - ```https://www.scriptjunkie.us/2011/04/why-encoding-does-not-matter-and-how-metasploit-generates-exes/ ```
 ``` msfencode was replaced by msfvenom in 2015 so to encode use msfvenom -e and it should encode
 
 ### Exe Generation with no Payload
