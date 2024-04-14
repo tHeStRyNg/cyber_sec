@@ -61,9 +61,7 @@ root@cloud1:/opt/sqlmap# curl -X POST https://www.virustotal.com/vtapi/v2/file/s
 ``` curl -X POST https://www.virustotal.com/vtapi/v2/file/scan -F apikey=b5b24bcfc00757dc6d4e566207d51cf97f6e0ea34f6643475cf726475b9bdf29 -F file=@myn.exe ```
 
 ## Get the report on the above submission
-``` curl --request GET --url "https://www.virustotal.com/vtapi/v2/file/report?apikey=b5b24bcfc00757dc6d4e566207d51cf97f6e0ea34f6643475cf726475b9bdf29&scan_id=5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200-171305150&resource=5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200"
-
-```
+```curl --request GET --url "https://www.virustotal.com/vtapi/v2/file/report?apikey=b5b24bcfc00757dc6d4e566207d51cf97f6e0ea34f6643475cf726475b9bdf29&scan_id=5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200-171305150&resource=5c9488072190679ef15825888b34e0486425991a451cb780e8cf1364f5bac200"```
 
 ### Response with report url:
 
