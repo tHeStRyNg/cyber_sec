@@ -18,7 +18,7 @@
 ``` echo -n | msfvenom -a x86 --platform Windows -e generic/none -f exe > myn.exe ```
 
 ### Example for Virus Total test with generic none encoding.
-root@cloud1:/opt/sqlmap# echo -n | msfvenom -a x86 --platform Windows -e generic/none -f exe > myn.exe
+``` root@cloud1:/opt/sqlmap# echo -n | msfvenom -a x86 --platform Windows -e generic/none -f exe > myn.exe
 Attempting to read payload from STDIN...
 Found 1 compatible encoders
 Attempting to encode payload with 1 iterations of generic/none
@@ -26,16 +26,16 @@ generic/none succeeded with size 0 (iteration=0)
 generic/none chosen with final size 0
 Payload size: 0 bytes
 Final size of exe file: 73802 bytes
-
-# ls -ls myn.exe && file myn.exe 
-76 -rw-r--r-- 1 root root 73802 Apr 13 23:15 myn.exe
-myn.exe: PE32 executable (GUI) Intel 80386, for MS Windows
+```
+### ls -ls myn.exe && file myn.exe 
+``` 76 -rw-r--r-- 1 root root 73802 Apr 13 23:15 myn.exe ```
+``` myn.exe: PE32 executable (GUI) Intel 80386, for MS Windows ```
 
 ## SqlMap
 ``` https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap ```
 
-## Virus Scanners
-1 - VirusTotal - ``` https://www.virustotal.com/gui/home/upload ```
+## AV Engines
+VirusTotal - ``` https://www.virustotal.com/gui/home/upload ```
 
 ```
 root@cloud1:/opt/sqlmap# curl -X POST https://www.virustotal.com/vtapi/v2/file/scan -F apikey=b5b24bcfc00757dc6d4e566207d51cf97f6e0ea34f6643475cf726475b9bdf29 -F file=@myn.exe
@@ -56,15 +56,18 @@ root@cloud1:/opt/sqlmap# curl -X POST https://www.virustotal.com/vtapi/v2/file/s
 ``` https://dnsdumpster.com/ ``` - Visual on services and diagrams of domain dependencies and addresss
 
 ## Other
-1 - https://hackertarget.com/
-2 - https://www.shodan.io/
-3 - nikto - ubuntu 20.x web vulerability scanner shell - 2024 version 2.1.5
+``` https://hackertarget.com ```
+``` https://www.shodan.io ```
+nikto - ubuntu 20.x web vulerability scanner shell - 2024 version 2.1.5
 ###    Example :
 ``` nikto -C all -h https://skilledfundedtraders.com ```
-``` install --> apt-get install nikto -y ```
+Install --> ``` apt-get install nikto -y ```
 
-4 - Burp Suite Community Edition - https://portswigger.net/burp/communitydownload
-5 - Malware Analysis -- https://remnux.org/
-6 - Penetration test OS - https://www.kali.org/
+4 - Burp Suite Community Edition - ``` https://portswigger.net/burp/communitydownload``` 
+5 - Malware Analysis -- ``` https://remnux.org/ ```
+6 - Penetration test OS - ``` https://www.kali.org/ ```
+``` https://hashcat.net/hashcat/ ``` - Advanced Pwd Recovery
 
+### WarGames
+``` https://hackthissite.org/ ```
 
